@@ -1463,7 +1463,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   what will be displayed below modal
 } */
 .modal div{
-  background: #181818;
+  /* background: #181818; */
+  background: #0f0f0f;
 }
 
 .modal #eventname h4{
@@ -1480,7 +1481,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .modal .modal-body p{
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
+  /* padding-top: 50px;  */
   color: white;
 }
 
@@ -1955,4 +1956,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   #subscribe button {
     margin-top: 10px;
   }
+}
+
+.modal-dialog {
+  max-width: none;
+  margin-left: 10px;
+}
+
+.h {
+  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+  line-height: 21pt;
+}
+
+.b {
+  color: #60FF77;
+  /* color: #4cbb17; */
+  font-weight: bold;
 }
