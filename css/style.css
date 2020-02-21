@@ -1958,9 +1958,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/* .close {
-  margin-top: 100px;
-} */
+.clo {
+  margin-top: 10px;
+}
 
 .modal{
   margin-top: 20px;

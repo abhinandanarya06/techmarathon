@@ -91,10 +91,10 @@ jQuery(document).ready(function($) {
     if (ferror) return false;
   });
 
-  document.getElementById("lm").addEventListener("click",function()
-  {
-    document.getElementById('tvfandom').focus();
-  }
+  // document.getElementById("lm").addEventListener("click",function()
+  // {
+  //   document.getElementById('tvfandom').focus();
+  // }
 
   // document.getElementById("submit").addEventListener("click",function()
   // {
