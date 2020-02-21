@@ -189,7 +189,7 @@ h6 {
   /* back to top button color */
   color: #ffffff;
   /* Why this kolaveri di */
-  z-index:1056;
+  z-index:1049;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -1986,6 +1986,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .modal-body {
-  max-height: calc(100vh - 170px);
+  max-height: calc(100vh - 100vh*0.25);
   overflow-y: auto;
 }
