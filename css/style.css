@@ -1967,11 +1967,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: white;
   margin-left: 2%;
   margin-right: 2%;
-  line-height: 21pt;
+  line-height: 18pt;
+  font-size: 17px;
 }
 
 .b {
   color: #60FF77;
-  /* color: #4cbb17; */
   font-weight: bold;
+}
+
+.modal-body {
+  max-height: calc(100vh - 170px);
+  overflow-y: auto;
 }
