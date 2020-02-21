@@ -1471,7 +1471,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 15px;
   padding-top: 15px;
   text-align: center;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 5px;
   border-bottom: 3px solid #00FF41;
@@ -1958,10 +1958,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-.modal-dialog {
-  max-width: none;
-  margin-left: 10px;
+/* .close {
+  margin-top: 100px;
+} */
+
+.modal{
+  margin-top: 20px;
 }
+
+.modal-dialog {
+  max-width: 90%;
+  margin: auto;
+}
+
 
 .h {
   color: white;

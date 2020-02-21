@@ -91,6 +91,11 @@ jQuery(document).ready(function($) {
     if (ferror) return false;
   });
 
+  document.getElementById("lm").addEventListener("click",function()
+  {
+    document.getElementById('tvfandom').focus();
+  }
+
   // document.getElementById("submit").addEventListener("click",function()
   // {
   //     var name=document.getElementById("name").value;

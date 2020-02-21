@@ -5341,7 +5341,7 @@ button.close {
 }
 
 .modal-open {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .modal {
@@ -5352,13 +5352,13 @@ button.close {
   left: 0;
   z-index: 1050;
   display: none;
-  overflow: hidden;
+  /* overflow: hidden; */
   outline: 0;
 }
 
 .modal-open .modal {
   overflow-x: hidden;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .modal-dialog {
@@ -5396,7 +5396,7 @@ button.close {
 }
 
 .modal-content {
-  /* position: relative;
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -5407,7 +5407,7 @@ button.close {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
-  outline: 0; */
+  outline: 0;
   /* height: auto !important;
   max-height: calc(100vh - 340px) !important;
   display: flex;
