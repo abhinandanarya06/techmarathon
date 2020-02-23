@@ -1989,3 +1989,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-height: calc(100vh - 100vh*0.25);
   overflow-y: auto;
 }
+
+@font-face {
+  font-family: "Open Sans Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fontawesome-webfont.woff") format("woff");
+  font-display: swap;
+}
+
+p {
+  font-family: "Open Sans Regular", Helvetica, Arial, Sans-Serif";
+}
