@@ -205,14 +205,14 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: #00b32d;
+  background: #05c034;
   /* Why this kolaveri di */
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #00b32d;
+  background: #07531a;
   /* On hover */
   color: #fff;
   /* Why this kolaveri di */
