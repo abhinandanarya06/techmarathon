@@ -8,7 +8,6 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
     <link href="img/favicon.webp" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -16,6 +15,23 @@
     <link href="lib/venobox/venobox.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+
+    <style>
+        * {margin: 0; padding: 0}
+        body {background: #000;}
+        canvas {display: block;
+        z-index: -99;}
+        .oncanvas {
+            position: absolute;
+            /* top: 50%; */
+            /* left: 50%; */
+            transform: translate(-50%, -50%);
+            color: antiquewhite;
+            font-size: 30px;
+            z-index: 99;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -39,11 +55,15 @@
     </header>
     <!--==========================Intro Section============================-->
     <section id="intro">
+
+        <canvas></canvas>
+
         <div class="intro-container wow fadeIn">
             <h1 class="mb-4 pb-0">The Annual<br><span>Sanganika</span> Fest</h1>
             <p class="mb-4 pb-0">6 March, DDU College, Dwarka, New Delhi</p>
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/6oewnMI3gZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <a href="https://youtu.be/qCeFEy1hk8s" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> <a href="#schedule" class="about-btn scrollto">The Events</a> </div>
+            <a href="https://youtu.be/qCeFEy1hk8s" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> <a href="#schedule" class="about-btn scrollto">The Events</a>
+        </div>
+        
     </section>
     <main id="main">
         <!--==========================About Section============================-->
@@ -547,28 +567,28 @@
                     <h2>Sponsors</h2> </div>
                 <div class="row no-gutters supporters-wrap clearfix">
                     <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo"> <img src="img/supporters/1.png" class="img-fluid" alt=""> </div>
+                        <div class="supporter-logo"> <img src="img/supporters/4.webp" width="85px" class="img-fluid" alt=""> </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo"> <img src="img/supporters/2.png" class="img-fluid" alt=""> </div>
+                        <div class="supporter-logo"> <img src="img/supporters/7.webp" class="img-fluid" alt=""> </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo"> <img src="img/supporters/3.png" class="img-fluid" alt=""> </div>
+                        <div class="supporter-logo"> <img src="img/supporters/6.webp" class="img-fluid" alt=""> </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo"> <img src="img/supporters/4.png" class="img-fluid" alt=""> </div>
+                        <div class="supporter-logo"> <img src="img/supporters/1.webp" class="img-fluid" alt=""> </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo"> <img src="img/supporters/5.png" class="img-fluid" alt=""> </div>
+                        <div class="supporter-logo"> <img src="img/supporters/8.webp" width="85px" class="img-fluid" alt=""> </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo"> <img src="img/supporters/6.png" class="img-fluid" alt=""> </div>
+                        <div class="supporter-logo"> <img src="img/supporters/2.webp" width="150px" class="img-fluid" alt=""> </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo"> <img src="img/supporters/7.png" class="img-fluid" alt=""> </div>
+                        <div class="supporter-logo"> <img src="img/supporters/3.webp" width="85px" class="img-fluid" alt=""> </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-xs-6">
-                        <div class="supporter-logo"> <img src="img/supporters/8.png" class="img-fluid" alt=""> </div>
+                        <div class="supporter-logo"> <img src="img/supporters/5.webp" class="img-fluid" alt=""> </div>
                     </div>
                 </div>
             </div>
@@ -647,6 +667,52 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.localscroll.min.js"></script>
     <script src="js/main2.min.js"></script>
+
+    <script>
+        // Initialising the canvas
+    var canvas = document.querySelector('canvas'),
+        ctx = canvas.getContext('2d');
+
+    // Setting the width and height of the canvas
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Setting up the letters
+    var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
+    letters = letters.split('');
+
+    // Setting up the columns
+    var fontSize = 10,
+        columns = canvas.width / fontSize;
+
+    // Setting up the drops
+    var drops = [];
+    for (var i = 0; i < columns; i++) {
+    drops[i] = 1;
+    }
+
+    // Setting up the draw function
+    function draw() {
+    ctx.fillStyle = 'rgba(0, 0, 0, .1)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    for (var i = 0; i < drops.length; i++) {
+        var text = letters[Math.floor(Math.random() * letters.length)];
+        ctx.fillStyle = '#00af00';
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+        drops[i]++;
+        if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
+        drops[i] = 0;
+        }
+    }
+    }
+
+    // Loop the animation
+    for(i=0;i<(canvas.height/9.7);i++)
+        draw()
+    setInterval(draw, 50);
+
+</script>
+
 </body>
 
 </html>
