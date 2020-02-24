@@ -185,7 +185,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #00ff41;
+  background: #03a12b;
   /* back to top button color */
   color: #ffffff;
   /* Why this kolaveri di */
@@ -431,11 +431,11 @@ h6 {
 
 .nav-menu li.buy-tickets a {
   color: #fff;
-  background: #00ff41;
+  background: #03a12b;
   /* Register button background */
   padding: 7px 22px;
   border-radius: 50px;
-  border: 2px solid #00ff41;
+  border: 2px solid #03a12b;
   /* Register button border */
   transition: all ease-in-out 0.3s;
   font-weight: 500;
@@ -1062,7 +1062,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule button {
-  background: #00ff41;
+  background: #03a12b;
   border: 0;
   padding: 3px 20px;
   color: #1d1d1d;
@@ -1073,7 +1073,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #schedule button:hover {
-  background: #00b32d;
+  background: #016e1d;
   color: #1d1d1d;
 }
 
@@ -1387,7 +1387,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background: #00ff41;
+  background: #03a12b;
   color: #fff;
   transition: all 0.3s ease;
   outline: none;
@@ -1396,7 +1396,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe button:hover {
-  background: #00b32d;
+  background: #016e1d;
 }
 
 /*--------------------------------------------------------------
@@ -1502,13 +1502,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50px;
   padding: 10px 40px;
   transition: all 0.2s;
-  background-color: #00ff41;
+  background-color: #03a12b;
   border: 0;
   color: #fff;
 }
 
 .modal button:hover {
-  background-color: #00b32d;
+  background-color: #016e1d;
 }
 /* 
 #schedule #buy-ticket-modal .modal-content{
@@ -1669,7 +1669,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #00ff41;
+  background: #03a12b;
   border: 0;
   padding: 10px 40px;
   color: #fff;
@@ -1679,7 +1679,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #00b32d;
+  background: #016e1d;
 }
 
 /*--------------------------------------------------------------
