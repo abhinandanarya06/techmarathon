@@ -1435,6 +1435,10 @@ nav#filter a {
   #subscribe input {
     min-width: 400px;
   }
+  #intro .about-btn {
+    display: none;
+  }
+
 }
 
 @media (min-width: 768px) {
