@@ -1587,3 +1587,7 @@ nav#filter a {
 p {
   font-family: "Open Sans Regular", Helvetica, Arial, Sans-Serif";
 }
+
+#schedule a[href^=tel] {
+  color: rgb(54, 111, 163);
+}
