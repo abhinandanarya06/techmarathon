@@ -614,7 +614,7 @@ nav#filter a {
 
 #intro:before {
   content: "";
-  background: rgba(6, 12, 34, 0.3);
+  /* background: rgba(6, 12, 34, 0.2); */
   /* The opaque color */
   position: absolute;
   bottom: 0;
