@@ -1,4 +1,4 @@
-# techmarathon20
+# TechMarathon'21
 Static website for Annual techfest of Deen Dayal Upadhyaya College, DU
 
-https://ankitkumarbrur.github.io/techmarathon/
+https://abhinandanarya06.github.io/techmarathon/
