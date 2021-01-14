@@ -2,9 +2,12 @@ body {
   background: #010101;
   color: #2f3138;
   /* event time color */
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
-
+.container {
+  border-radius: 5px;
+  background-color: rgba(12, 10, 10, 0.8);
+}
 a {
   color: #00ff41;
   /* The link color */
@@ -31,11 +34,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Press Start 2P', cursive;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
   color: #00FF41;
+  text-shadow: 3px 3px rgba(0, 0, 0);
 }
 
 .main-page {
@@ -120,6 +124,7 @@ h6 {
 }
 
 .section-header h2 {
+  padding-top: 20px;
   font-size: 36px;
   text-transform: uppercase;
   text-align: center;
@@ -663,7 +668,9 @@ nav#filter a {
 }
 
 #intro h1 span {
-  color: #00ff41;
+  font-family: 'Great Vibes', cursive;
+  text-transform: capitalize;
+  color: orange;
 }
 
 #intro p {
@@ -820,6 +827,7 @@ nav#filter a {
 }
 
 #about h2 {
+  padding-top: 20px;
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -827,6 +835,7 @@ nav#filter a {
 }
 
 #about h3 {
+  padding-top: 30px;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
