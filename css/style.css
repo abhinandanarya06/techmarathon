@@ -6,12 +6,6 @@ body {
 .source-code {
   font-family: 'Source Code Pro', monospace;
 }
-.press-start {
-  font-family: 'Press Start 2P', cursive;
-}
-.vibes {
-  font-family: 'Great Vibes', cursive;
-}
 .container {
   border-radius: 5px;
   background-color: rgba(12, 10, 10, 0.8);
