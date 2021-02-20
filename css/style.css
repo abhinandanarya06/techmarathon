@@ -875,7 +875,9 @@ nav#filter a {
   display: inline-block;
   margin-bottom: 0;
 }
-
+.center {
+  margin: auto 2px;
+}
 #schedule .nav-tabs a {
   border: none;
   border-radius: 50px;
