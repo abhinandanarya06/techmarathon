@@ -541,7 +541,7 @@ nav#filter a {
 }
 
 
-.portfolio-items article img {width:100%;} 
+.portfolio-items article img {width:100%;}
 
 .portfolio-item {
 	display: block;
@@ -880,7 +880,7 @@ nav#filter a {
   border: none;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #00b32d;
+  background-color: #5783fa;
   color: #fff;
   padding: 10px 100px;
 }
@@ -918,7 +918,7 @@ nav#filter a {
 }
 
 #schedule .schedule-item time {
-  
+
   display: inline-block;
   float: left;
   padding-right: 40px;
@@ -1079,7 +1079,7 @@ nav#filter a {
 #faq #faq-list {
   padding: 0;
   list-style: none;
-  
+
 }
 
 #faq #faq-list li {
