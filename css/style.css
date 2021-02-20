@@ -2,7 +2,15 @@ body {
   background: #010101;
   color: #2f3138;
   /* event time color */
+}
+.source-code {
   font-family: 'Source Code Pro', monospace;
+}
+.press-start {
+  font-family: 'Press Start 2P', cursive;
+}
+.vibes {
+  font-family: 'Great Vibes', cursive;
 }
 .container {
   border-radius: 5px;
@@ -34,7 +42,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Press Start 2P', cursive;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -668,7 +675,6 @@ nav#filter a {
 }
 
 #intro h1 span {
-  font-family: 'Great Vibes', cursive;
   text-transform: capitalize;
   color: orange;
 }
