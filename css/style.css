@@ -15,7 +15,14 @@ a {
   /* The link color */
   transition: 0.5s;
 }
-
+.indie {
+  font-family: 'Indie Flower', cursive;
+}
+.vibes {
+  font-family: 'Great Vibes', cursive;
+  color: rgb(255, 144, 71);
+  font-size:xxx-large;
+}
 a:hover,
 a:active,
 a:focus {
