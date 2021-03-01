@@ -100,7 +100,7 @@ function checkAnswer() {
 
           var userAnswer = $("#answer").val();
 
-          if (userAnswer == correctAnswer) {
+          if (userAnswer.toLowerCase() == correctAnswer.toLowerCase()) {
             
             if (tries >= 20) {
               totalPoints = Number(totalPoints) + 10;
@@ -220,6 +220,11 @@ function renderButton() {
   });
 }
 var i=0;
+$(".home").click(function(){
+  $(".leaderboard").toggle("slow")
+
+});
+$(".logout").click(signOut);
 $(".top-scores").click(function(){
   var leaderboard = "";
   $(".leaderboard").toggle("slow")

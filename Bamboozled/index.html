@@ -19,7 +19,7 @@
 
 
   
-    <h1 class="title neon">
+    <h1 class="title neon" id="top">
         Bamboozled
     </h1>
 
@@ -29,19 +29,25 @@
         <nav>
             <div class="selector" id="selector"></div>
             <ul>
-                <li data-list="1" id="my-signin2"><span class="material-icons">
+                <a href="./index.html">
+                    <li data-list="1" id="my-signin2"><span class="material-icons">
                         login
                     </span></li>
+                </a>
+
                 <li data-list="2" class="top-scores"><span class="material-icons">
                         leaderboard
                     </span></li>
-                <li data-list="3" class="active"><span class="material-icons">
-                        home
-                    </span></li>
+                    <a href="#last"></a>
+                        <li data-list="3" class="active home"><span class="material-icons">
+                            home
+                        </span></li>
+                    </a>
+
                 <li data-list="4"><span class="material-icons">
                         favorite_border
                     </span></li>
-                <li data-list="5"><span class="material-icons">
+                <li data-list="5" class="logout"><span class="material-icons">
                         logout
                     </span></li>
             </ul>
@@ -120,34 +126,11 @@ leaderboard
         <mark>Trevor McCormick</mark>
         <small>245</small>
       </li>
-      <li>
+      <li id="last">
         <mark>Andrew Fox</mark>
         <small>203</small>
       </li>
-      <li>
-        <mark>Andrew Fox</mark>
-        <small>203</small>
-      </li>
-      <li>
-        <mark>Andrew Fox</mark>
-        <small>203</small>
-      </li>
-      <li>
-        <mark>Andrew Fox</mark>
-        <small>203</small>
-      </li>
-      <li>
-        <mark>Andrew Fox</mark>
-        <small>203</small>
-      </li>
-      <li>
-        <mark>Andrew Fox</mark>
-        <small>203</small>
-      </li>
-      <li>
-        <mark>Andrew Fox</mark>
-        <small>203</small>
-      </li>
+
     </ol>
   </div>
   
