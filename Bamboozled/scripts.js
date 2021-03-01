@@ -19,7 +19,7 @@ function onSignIn(googleUser) {
     "Hints Used": 0,
     "Total Points": 0
   }
-  $.get(url, data, function () {
+  $.post(url, data, function () {
     $("#username").html(profile.getName());
     $("#wrapper").css("display","none");
     $(".profile-pic").css("background-image",'url('+profile.getImageUrl()+')');
@@ -93,8 +93,12 @@ function checkAnswer() {
     $.getJSON("https://spreadsheets.google.com/feeds/list/1mYm2bAsjpxF5avkyfdZ1bVNQEV2Nm2kIP0bgMjYG22g/2/public/full?alt=json", function (data) {
       for (var i = 0; i < data.feed.entry.length; i++) {
         if (currentQuestion == data.feed.entry[i].gsx$questionnumber.$t) {
-          let correctAnswer = data.feed.entry[i].gsx$answer.$t;
-          let userAnswer = $("#answer").val()
+          var correctAnswer = data.feed.entry[i].gsx$answer.$t;
+          break;
+        }
+      }
+
+          var userAnswer = $("#answer").val();
 
           if (userAnswer == correctAnswer) {
             
@@ -119,7 +123,7 @@ function checkAnswer() {
               "currentQuestion": currentQuestion,
               "totalPoints": totalPoints
             };
-            $.get(url, data, function () {
+            $.post(url, data, function () {
               showQuestion(currentUserId)
               console.log("Answer Is Correct");
             });
@@ -136,29 +140,13 @@ function checkAnswer() {
               "answer": "wrong",
               "user_id": currentUserId
             };
-            $.get(url, data, function () {
+            $.post(url, data, function () {
               showQuestion(currentUserId)
               showStatus("Answer Is Wrong please try again");
               console.log("Amswer Is Wrong please try again");
             });
 
           }
-          // if (tries >= 20) {
-          //   $("#hint1").html(data.feed.entry[i].gsx$hint1.$t);
-          //   $("#hint2").html(data.feed.entry[i].gsx$hint2.$t);
-
-          // }
-          // else if (tries >= 10) {
-          //   $("#hint1").html(data.feed.entry[i].gsx$hint1.$t);
-          //   $("#hint2").html(data.feed.entry[i].gsx$hint2.$t);
-          // }
-          // else if (tries >= 5) {
-          //   $("#hint1").html(data.feed.entry[i].gsx$hint1.$t);
-          // }
-          break;
-        }
-      }
-
     });
   });
 }
@@ -231,3 +219,15 @@ function renderButton() {
     'onfailure': onFailure
   });
 }
+var i=0;
+$(".top-scores").click(function(){
+  var leaderboard = "";
+  $(".leaderboard").toggle("slow")
+  $.getJSON("https://spreadsheets.google.com/feeds/list/1mYm2bAsjpxF5avkyfdZ1bVNQEV2Nm2kIP0bgMjYG22g/1/public/full?alt=json", function (data) {
+    for (var i = 0; i < 5; i++) {
+      leaderboard += "<li><mark>"+data.feed.entry[i].gsx$username.$t+"</mark><small>"+data.feed.entry[i].gsx$totalpoints.$t+"</small></li>"  
+    }
+    $(".leaderboard-list").html(leaderboard)
+    
+  });
+});
