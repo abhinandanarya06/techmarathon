@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id"
+        content="316662410169-04ua54n5epr307i3hp1kdvneiqlubtsh.apps.googleusercontent.com">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <title>Bamboozled</title>
+</head>
+
+<body>
+
+
+  
+    <h1 class="title neon">
+        Bamboozled
+    </h1>
+
+    <h2 class="neon subtitle">Techmarathon</h2>
+
+    <div class="flex-container">
+        <nav>
+            <div class="selector" id="selector"></div>
+            <ul>
+                <li data-list="1" id="my-signin2"><span class="material-icons">
+                        login
+                    </span></li>
+                <li data-list="2"><span class="material-icons">
+                        leaderboard
+                    </span></li>
+                <li data-list="3" class="active"><span class="material-icons">
+                        home
+                    </span></li>
+                <li data-list="4"><span class="material-icons">
+                        favorite_border
+                    </span></li>
+                <li data-list="5"><span class="material-icons">
+                        logout
+                    </span></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="profile-pic" >
+    <!-- <h2 id="username"></h2> -->
+    </div>
+
+    <!-- ######################################### -->
+    <div class="container" id="wrapper" ontouchstart="this.classList.toggle('hover');">
+        <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" id="card">
+          <div class="front">
+            <i class="fa fa-battery-0"></i>
+            <h1>Rules</h1>
+            <!-- <p class="p1">/ˈenərjē/</p> -->
+            <p class="p2">the strength and vitality required for sustained physical or mental activity. "changes in the levels of vitamins can affect energy and well-being"</p>
+          </div>
+      
+          <div class="back">
+            <h1>the sun's energy</h1>
+            <p class="p3">provides light and warmth to our planet in order to sustain and develop life.</p>
+          </div>
+        </div>
+      </div>
+    <!-- ##################################### -->
+
+      <!-- ##################################### -->
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    
+    
+    <br>
+    <div id="question"></div>
+    <!-- <img id="question" src="" class="questionStyle"> -->
+    <br>
+    <div id="input"></div>
+    <br>
+    <div id="submit"></div>
+    <a href=""></a>
+
+    <h4 id="hint1"></h4>
+    <br>
+    <h4 id="hint2"></h4>
+    <br>
+    <h4 id="hint3"></h4>
+    <br>
+    <h5 id="status"></h5>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./scripts.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script src="assets/js/bs-animation.js"></script> -->
+<!-- <script src="assets/js/main.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+
+
+</html>
