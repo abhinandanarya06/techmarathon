@@ -256,7 +256,7 @@ li.active span {
   #card {
     width: 25%;
     height: 485px;
-    margin: 100px auto 50px auto;
+    margin: 80px auto 50px auto;
     background-color: #333453;
     text-align: center;
     padding: 15px;
@@ -289,6 +289,8 @@ li.active span {
     /* For mobile phones: */
     #card{
       width: 60%;
+      margin-top: 20px;
+
     }
     .flex-container{
       margin-left: auto;
@@ -301,6 +303,11 @@ li.active span {
     #card{
       width: 90%;
       height: 600px;
+      margin-top: 10px;
+    }
+    .questionStyle {
+      max-width: 436px;
+      max-height: 500px;
     }
   }
   #card:hover {
