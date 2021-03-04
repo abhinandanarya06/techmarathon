@@ -144,8 +144,8 @@ function checkAnswer() {
             };
             $.post(url, data, function () {
               showQuestion(currentUserId)
-              showStatus("Answer Is Wrong please try again");
-              console.log("Amswer Is Wrong please try again");
+              showStatus("Answer Was Wrong please try again");
+              console.log("Amswer Was Wrong please try again");
             });
 
           }

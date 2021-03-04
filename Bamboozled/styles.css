@@ -255,6 +255,9 @@ li.active span {
   
   #card {
     width: 25%;
+    order: 1;
+    flex-grow: 1;
+    flex-basis: auto;
     height: 485px;
     margin: 100px auto 50px auto;
     background-color: #333453;
@@ -263,6 +266,12 @@ li.active span {
     border-radius: 15px;
     box-shadow: 0px 0px 10px #999;
     /* background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% ); */
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #card{
+      width: 80%;
+    }
   }
   
   #card:hover {
@@ -328,8 +337,9 @@ li.active span {
   /* entire container, keeps perspective */
   #wrapper {
     perspective: 1000px;
-    display: table;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
   }
   /* flip the pane when hovered */
   #wrapper:hover #card,
