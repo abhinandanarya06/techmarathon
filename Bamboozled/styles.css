@@ -10,8 +10,41 @@
 }
 #status{
     display: none;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+.inputdiv{
+  display: table;
+  margin: auto;
+}
+#answer{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 10;
+  height: 40px;
+  padding: 9px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  
+}
+#answer:focus{
+  box-shadow:0 0 20px rgb(0, 255, 170);
+  outline: none;
+  border: none;
+}
+#hint1,#hint2,#hint3{
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.g-signin2{
+  margin-top: 10%;
+  display: table;
+  margin: auto;
+}
 
 /* ##################################################################### */
 /* body{
@@ -45,7 +78,7 @@
 }
 
 .title{
-  font-family: bungee, 'Bungee', sans-serif;
+  font-family:serif;
   font-weight: 400;
   font-style: normal;
   font-size: 4em;
@@ -223,7 +256,7 @@ li.active span {
   #card {
     width: 25%;
     height: 485px;
-    margin: 140px auto;
+    margin: 100px auto 50px auto;
     background-color: #333453;
     text-align: center;
     padding: 15px;
@@ -247,7 +280,7 @@ li.active span {
     font-size: 36px;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     text-align: center;
     font-weight: bold;
     margin-left: 15px;
@@ -261,7 +294,8 @@ li.active span {
   .p2 {
     color: #95969e;
     font-size: 18px;
-    margin-top: 70px;
+    margin-top:20px;
+    margin-bottom: 20px;
     padding: 0px 20px;
   }
   
@@ -294,6 +328,8 @@ li.active span {
   /* entire container, keeps perspective */
   #wrapper {
     perspective: 1000px;
+    display: table;
+    text-align: center;
   }
   /* flip the pane when hovered */
   #wrapper:hover #card,
@@ -355,7 +391,7 @@ li.active span {
 .check{
     position: relative;
     display: table;
-    padding: 25px 30px;
+    padding: 10px 30px;
     margin: auto;
     color: #03e9f4;
     text-decoration: none;
@@ -363,12 +399,19 @@ li.active span {
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10%;
+    margin-top: 1%;
     /* margin-right: 50px; */
    
 }
+
 .check:hover{
     background: #03e9f4;
-    color: #050801;
+    color: #4f5a46;
     cursor: pointer;
     box-shadow: 0 0 5px #03e9f4,
                 0 0 25px #03e9f4,
@@ -377,7 +420,7 @@ li.active span {
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
 .check:nth-child(1){
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(317deg);
 }
 .check:nth-child(2){
     filter: hue-rotate(110deg);
