@@ -154,8 +154,8 @@ function checkAnswer() {
 }
 function showStatus(status) {
   $("#status").html(status)
-  $("#status").fadeIn(5000, function () {
-    $("#status").fadeOut(5000)
+  $("#status").fadeIn(500, function () {
+    $("#status").fadeOut(1000)
   });
 
 
