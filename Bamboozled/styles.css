@@ -16,7 +16,9 @@
   width: 320px;
   text-align: center;
   font-size: 15px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana bold, sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.5px;
   z-index: 10;
   height: 30px;
   padding: 9px;
