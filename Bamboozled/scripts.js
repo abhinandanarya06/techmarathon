@@ -180,6 +180,7 @@ function signOut() {
   $("#wrapper").css("display","table");
   $(".inputdiv").css("display","none");
   $(".profile-pic").css("display","none");
+  $("#teamName").css("display","block");
 }
 
 
