@@ -8,6 +8,17 @@
     display: table;
     margin: auto;
 }
+#teamName{
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 1%;
+}
+#user_name{
+  position: relative;
+  left: 25px;
+  bottom: 45px;
+}
 #status{
     display: none;
     margin-top: 1%;
@@ -258,7 +269,7 @@ li.active span {
   #card {
     width: 25%;
     height: 485px;
-    margin: 80px auto 50px auto;
+    margin: 60px auto 50px auto;
     background-color: #333453;
     text-align: center;
     padding: 15px;
@@ -515,6 +526,9 @@ Body
 body {
   min-height: 450px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0;
   background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
   color: #fff;
@@ -758,9 +772,25 @@ Leaderboard
     height: 600px;
     margin-top: 10px;
   }
-
+  .leaderboard {
+    top: 50%;
+    left: 50%;
+  }
   .questionStyle {
     max-width: 436px;
     max-height: 500px;
   }
+}
+
+
+
+
+
+footer {
+  /* position: relative; */
+  flex-shrink: 0;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 20px black;
+  padding: 20px;
 }

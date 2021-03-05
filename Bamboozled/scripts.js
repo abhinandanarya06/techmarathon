@@ -3,14 +3,21 @@ const url = "https://script.google.com/macros/s/AKfycbzZjXP4huhmi7PnrRM3nzhl9ytZ
 var currentUserId
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + typeof (profile.getId())); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + typeof (profile.getName()));
-  console.log('Image URL: ' + typeof (profile.getImageUrl()));
-  console.log('Email: ' + typeof (profile.getEmail())); // This is null if the 'email' scope is not present.
+  var teamName = $("#teamName").val();
+  console.log(teamName)
+  if(teamName == ""){
+    user_name = profile.getName();
+  }else{
+    user_name = teamName;
+  }
+  // console.log('ID: ' + typeof (profile.getId())); // Do not send to your backend! Use an ID token instead.
+  // console.log('Name: ' + typeof (profile.getName()));
+  // console.log('Image URL: ' + typeof (profile.getImageUrl()));
+  // console.log('Email: ' + typeof (profile.getEmail())); // This is null if the 'email' scope is not present.
   currentUserId = profile.getId()
   const data = {
     "id": "users",
-    "User Name": profile.getName(),
+    "User Name": user_name,
     "User ID": profile.getId(),
     "Email": profile.getEmail(),
     "Image URL": profile.getImageUrl(),
@@ -25,6 +32,7 @@ function onSignIn(googleUser) {
     $(".inputdiv").css("display","table");
     $(".profile-pic").css("display","block");
     $(".profile-pic").css("background-image",'url('+profile.getImageUrl()+')');
+    $("#user_name").html(user_name);
     showQuestion(profile.getId());
   });
 

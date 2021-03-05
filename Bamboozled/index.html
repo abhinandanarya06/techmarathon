@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -56,6 +57,7 @@
   <div class="profile-pic">
     <!-- <h2 id="username"></h2> -->
   </div>
+  <!-- <h2 id="user_name"></h2> -->
 
   <!-- ######################################### -->
   <div class="container" id="wrapper" ontouchstart="this.classList.toggle('hover');">
@@ -86,9 +88,11 @@
       </div>
 
     </div>
+    <input id="teamName" type="text" placeholder="Have Team? Enter Team Name  And Than sign In">
     <h2
       style="text-align: center;margin-bottom: 1%;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
       To start/continue the game sign in using your Google id</h2>
+
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
   </div>
   <!-- ##################################### -->
@@ -105,6 +109,7 @@
     <h4 id="hint2"></h4>
     <h4 id="hint3"></h4>
     <div id="submit"></div>
+    
   </div>
 
 
@@ -145,7 +150,12 @@ Top Players    </h1>
 
     </ol>
   </div>
+  <footer class="footer" style="font-family:monospace;">
 
+    
+    Developed By Mohd Ashif
+    
+  </footer>
 
 
 
