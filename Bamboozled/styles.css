@@ -8,10 +8,74 @@
     display: table;
     margin: auto;
 }
+#teamName{
+  
+  
+  margin: auto;
+  margin-bottom: 1%;
+  width: 320px;
+  text-align: center;
+  font-size: 15px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana bold, sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  z-index: 10;
+  height: 30px;
+  padding: 9px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+#teamName:focus{
+  box-shadow:0 0 20px rgb(0, 255, 170);
+  outline: none;
+  border: none;
+}
+#user_name{
+  position: relative;
+  left: 25px;
+  bottom: 45px;
+  width: 250px;
+}
 #status{
     display: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+.inputdiv{
+  display: table;
+  margin: auto;
+}
+#answer{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 10;
+  height: 40px;
+  padding: 9px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  
+}
+#answer:focus{
+  box-shadow:0 0 20px rgb(0, 255, 170);
+  outline: none;
+  border: none;
+}
+#hint1,#hint2,#hint3{
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.g-signin2{
+  margin-top: 10%;
+  display: table;
+  margin: auto;
+}
 
 /* ##################################################################### */
 /* body{
@@ -45,7 +109,7 @@
 }
 
 .title{
-  font-family: bungee, 'Bungee', sans-serif;
+  font-family:serif;
   font-weight: 400;
   font-style: normal;
   font-size: 4em;
@@ -95,7 +159,7 @@
   display: flex;
   margin-left: 80%;
   margin-top: -4%;
-  /* justify-content: center; */
+  justify-content: center;
   /* align-items: center; */
 }
 
@@ -223,7 +287,7 @@ li.active span {
   #card {
     width: 25%;
     height: 485px;
-    margin: 140px auto;
+    margin: 60px auto 50px auto;
     background-color: #333453;
     text-align: center;
     padding: 15px;
@@ -247,7 +311,7 @@ li.active span {
     font-size: 36px;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     text-align: center;
     font-weight: bold;
     margin-left: 15px;
@@ -261,7 +325,8 @@ li.active span {
   .p2 {
     color: #95969e;
     font-size: 18px;
-    margin-top: 70px;
+    margin-top:20px;
+    margin-bottom: 20px;
     padding: 0px 20px;
   }
   
@@ -294,6 +359,9 @@ li.active span {
   /* entire container, keeps perspective */
   #wrapper {
     perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
   }
   /* flip the pane when hovered */
   #wrapper:hover #card,
@@ -355,7 +423,7 @@ li.active span {
 .check{
     position: relative;
     display: table;
-    padding: 25px 30px;
+    padding: 10px 30px;
     margin: auto;
     color: #03e9f4;
     text-decoration: none;
@@ -363,12 +431,19 @@ li.active span {
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10%;
+    margin-top: 1%;
     /* margin-right: 50px; */
    
 }
+
 .check:hover{
     background: #03e9f4;
-    color: #050801;
+    color: #4f5a46;
     cursor: pointer;
     box-shadow: 0 0 5px #03e9f4,
                 0 0 25px #03e9f4,
@@ -377,7 +452,7 @@ li.active span {
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
 .check:nth-child(1){
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(317deg);
 }
 .check:nth-child(2){
     filter: hue-rotate(110deg);
@@ -469,6 +544,9 @@ Body
 body {
   min-height: 450px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   margin: 0;
   background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
   color: #fff;
@@ -480,8 +558,8 @@ Leaderboard
 --------------------*/
 .leaderboard {
   position: absolute;
-  top: 50%;
-  left: 90%;
+  top: 35%;
+  left: 85%;
   transform: translate(-50%, -50%);
   width: 285px;
   height: 308px;
@@ -660,4 +738,77 @@ Leaderboard
 }
 .the-most img {
   max-width: 100%;
+}
+
+
+@media only screen and (max-width: 1760px) {
+  /* For mobile phones: */
+  #card{
+    width: 30%;
+    
+  }
+  .flex-container{
+    margin-left: 70%;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  /* For mobile phones: */
+  #card{
+    width: 40%;
+  }
+  .leaderboard {
+    top: 35%;
+    left: 84%;
+  }
+  .flex-container{
+    margin-left: 70%;
+    margin-top: -6%;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  /* For mobile phones: */
+  #card{
+    width: 60%;
+    margin-top: 20px;
+
+  }
+  .leaderboard {
+    top: 40%;
+    left: 50%;
+  }
+  .flex-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #card{
+    width: 90%;
+    height: 600px;
+    margin-top: 10px;
+  }
+  .leaderboard {
+    top: 50%;
+    left: 50%;
+  }
+  .questionStyle {
+    max-width: 436px;
+    max-height: 500px;
+  }
+}
+
+
+
+
+
+footer {
+  /* position: relative; */
+  flex-shrink: 0;
+  width: 100%;
+  height: 50px;
+  box-shadow:  0 -2px 2px 0 rgb(0 0 0 / 14%), 0 -3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%) ;
+  padding: 20px;
 }

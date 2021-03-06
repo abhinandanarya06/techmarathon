@@ -2,113 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id"
-        content="316662410169-04ua54n5epr307i3hp1kdvneiqlubtsh.apps.googleusercontent.com">
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id"
+    content="316662410169-04ua54n5epr307i3hp1kdvneiqlubtsh.apps.googleusercontent.com">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
-    <title>Bamboozled</title>
+  <title>Bamboozled</title>
 </head>
 
 <body>
 
 
-  
-    <h1 class="title neon" id="top">
-        Bamboozled
-    </h1>
 
-    <h2 class="neon subtitle">Techmarathon</h2>
+  <h1 class="title neon" id="top">
+    Bamboozled
+  </h1>
 
-    <div class="flex-container">
-        <nav>
-            <div class="selector" id="selector"></div>
-            <ul>
-                <a href="./index.html">
-                    <li data-list="1" id="my-signin2"><span class="material-icons">
-                        refresh
-                    </span></li>
-                </a>
+  <h2 class="neon subtitle">Techmarathon</h2>
 
-                <li data-list="2" class="top-scores"><span class="material-icons">
-                        leaderboard
-                    </span></li>
-                    <a href="#last"></a>
-                        <li data-list="3" class="active home"><span class="material-icons">
-                            home
-                        </span></li>
-                    </a>
+  <div class="flex-container">
+    <nav>
+      <div class="selector" id="selector"></div>
+      <ul>
+        <a href="./index.html">
+          <li data-list="1" id="my-signin2"><span class="material-icons">
+              refresh
+            </span></li>
+        </a>
 
-                <li data-list="4"><span class="material-icons">
-                        favorite_border
-                    </span></li>
-                <li data-list="5" class="logout"><span class="material-icons">
-                        logout
-                    </span></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="profile-pic" >
+        <li data-list="2" class="top-scores"><span class="material-icons">
+            leaderboard
+          </span></li>
+        <a href="#last"></a>
+        <li data-list="3" class="active home"><span class="material-icons">
+            home
+          </span></li>
+        </a>
+
+        <li data-list="4"><span class="material-icons">
+            favorite_border
+          </span></li>
+        <li data-list="5" class="logout"><span class="material-icons">
+            logout
+          </span></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="profile-pic">
     <!-- <h2 id="username"></h2> -->
-    </div>
+  </div>
+  <h2 id="user_name"></h2>
 
-    <!-- ######################################### -->
-    <div class="container" id="wrapper" ontouchstart="this.classList.toggle('hover');">
-        <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" id="card">
-          <div class="front">
-            <i class="fa fa-battery-0"></i>
-            <h1>Rules</h1>
-            <!-- <p class="p1">/ˈenərjē/</p> -->
-            <p class="p2">the strength and vitality required for sustained physical or mental activity. "changes in the levels of vitamins can affect energy and well-being"</p>
-          </div>
-      
-          <div class="back">
-            <h1>the sun's energy</h1>
-            <p class="p3">provides light and warmth to our planet in order to sustain and develop life.</p>
-          </div>
-        </div>
+  <!-- ######################################### -->
+  <div class="container" id="wrapper" ontouchstart="this.classList.toggle('hover');">
+    <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" id="card">
+      <div class="front">
+        <i class="fa fa-battery-0"></i>
+        <h1>Rules</h1>
+        <!-- <p class="p1">/ˈenərjē/</p> -->
+        <p class="p2">50 questions, each has only one correct answer.
+          Questions are basically a pic depicting some info or simple pics of something, which in someway
+          Relate to a proper noun. The task of the player is to brainstorm, may use google or any other search
+          engine and workout the answer.
+        </p>
+        <h1>Winning Criteria</h1>
+        <p class="p2">One with the Highest points On The Leaderboard at the end of the day wins.
+        </p>
       </div>
-    <!-- ##################################### -->
 
-      <!-- ##################################### -->
+      <div class="back">
+        <h1>Scoring System</h1>
+        <p class="p3"> Without hints : 50 <br>
+          After 1 hint : 30<br>
+          After 2 hints : 20<br>
+          After 3 hints : 10<br>
+
+          Player has Unlimited no. Of tries.
+        </p>
+      </div>
+
+    </div>
+    <input id="teamName" type="text" placeholder="Have Team? Enter Team Name And sign In">
+    <h2
+      style="text-align: center;margin-bottom: 1%;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      To start/continue the game sign in using your Google id</h2>
+
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    
-    
-    <br>
+  </div>
+  <!-- ##################################### -->
+
+  <!-- ##################################### -->
+
+
+  <br>
+  <div class="inputdiv">
     <div id="question"></div>
-    <!-- <img id="question" src="" class="questionStyle"> -->
-    <br>
-    <div id="input"></div>
-    <br>
-    <div id="submit"></div>
-    <a href=""></a>
-
+    <h2 id="status"></h2>
+    <div id="input" class="form-control"></div>
     <h4 id="hint1"></h4>
-    <br>
     <h4 id="hint2"></h4>
-    <br>
     <h4 id="hint3"></h4>
-    <br>
-    <h5 id="status"></h5>
+    <div id="submit"></div>
+    
+  </div>
 
-    <!--
+
+
+  <!--
 
 leaderboard
 
 -->
-<div class="leaderboard">
+  <div class="leaderboard">
     <h1>
-        <span class="material-icons">
-            emoji_events
-        </span>
+      <span class="material-icons">
+        emoji_events
+      </span>
 
-      Most active Players
-    </h1>
+Top Players    </h1>
     <ol class="leaderboard-list">
       <li>
         <mark>Jerry Wood</mark>
@@ -133,9 +150,14 @@ leaderboard
 
     </ol>
   </div>
-  
-  
-  
+  <!-- <footer class="footer" style="font-family:monospace;">
+
+    
+    Developed By Mohd Ashif
+    
+  </footer> -->
+
+
 
 
 </body>
