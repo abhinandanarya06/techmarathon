@@ -1616,3 +1616,16 @@ p {
 #schedule a[href^=tel] {
   color: rgb(22, 113, 197);
 }
+.result {
+  background-color: rgb(204, 255, 83);
+  color: rgb(90, 20, 20);
+  border-radius: 50px;
+  border-color: rgb(0, 78, 0);
+  border-width:thick;
+}
+.result:hover {
+  background-color: rgb(0, 165, 0);
+  color: rgb(179, 77, 77);
+  border-color: rgb(204, 255, 83);
+  border-width: medium;
+}
